@@ -2,6 +2,7 @@
   line-height: 30px;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media ($desktop-width) {
     flex-direction: row;
@@ -577,5 +578,15 @@ input {
 
 .pop-up {
   display: none;
+  position: absolute;
+  //display: block;
+
+  &--falure {
+    bottom: 70%;
+  }
+
+  &--success {
+    bottom: 20%;
+  }
 }
 

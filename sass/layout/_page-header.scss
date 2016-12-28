@@ -51,14 +51,6 @@ header {
       padding: 205px 0 0;
     }
   }
-
-  &--form-page {
-    .page-header__title {
-      h1 {
-        padding: 0 10%;
-      }
-    }
-  }
 }
 
 .page-header__title {
@@ -111,16 +103,21 @@ header {
     margin: 0 auto;
     padding-bottom: 120px;
   }
+}
 
-  .download {
-    order: 1;
+
+.download {
+  h1 {
+    padding: 0 10%;
+  }
+
+  order: 1;
+  margin: 0;
+
+  @media ($tablet-width) {
+    order: 0;
     margin: 0;
-
-    @media ($tablet-width) {
-      order: 0;
-      margin: 0;
-      width: 55%;
-    }
+    width: 55%;
   }
 }
 
@@ -144,10 +141,10 @@ header {
   }
 }
 
-.page-header-wrapper
-{
+.page-header-wrapper {
   position: relative;
   z-index: 2;
+
   @media ($desktop-width) {
     background-color: rgba($grey-color, 0.52);
   }

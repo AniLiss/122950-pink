@@ -197,21 +197,20 @@
     background-position: -15px 0;
     background-size: 80px 70px;
   }
-
-  &--name {
-    display: block;
-    transform: rotate(-45deg);
-    position: absolute;
-    top: 26px;
-    left: 25px;
-
-    @media ($tablet-width) {
-      top: 5px;
-      left: 8px;
-    }
-  }
 }
 
+.tariffs__item-hit-name {
+  display: block;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 26px;
+  left: 25px;
+
+  @media ($tablet-width) {
+    top: 5px;
+    left: 8px;
+  }
+}
 .tariff-feature {
   background-color: $white-color;
 }

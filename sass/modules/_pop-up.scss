@@ -1,7 +1,9 @@
 .pop-up {
   @include container();
+
   box-shadow: 0 2px 12px -4px;
   margin: 15px auto;
+  background-color: $white-color;
 
   &--success {
     padding: 0;

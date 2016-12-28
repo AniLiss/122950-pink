@@ -101,18 +101,6 @@
       box-shadow: none;
       background-color: transparent;
     }
-
-    a {
-      font-size: 18px;
-      line-height: 32px;
-      color: $white-color;
-      display: block;
-      text-transform: uppercase;
-
-      @media ($desktop-width) {
-        text-transform: capitalize;
-      }
-    }
   }
 
   @media ($desktop-width) {
@@ -120,6 +108,20 @@
     justify-content: space-between;
     //background-color: #283645;
     border: 0 solid #000;
+  }
+}
+
+.page-header-menu__navigation-list {
+  a {
+    font-size: 18px;
+    line-height: 32px;
+    color: $white-color;
+    display: block;
+    text-transform: uppercase;
+
+    @media ($desktop-width) {
+      text-transform: capitalize;
+    }
   }
 }
 
