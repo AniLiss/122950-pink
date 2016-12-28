@@ -67,7 +67,7 @@
 .logo {
   svg {
     path {
-      fill: $white-color;
+      //fill: $white-color;
     }
   }
 
@@ -259,6 +259,10 @@
 .photo-posting__filter {
   svg {
     fill: rgba($grey-color, 0.3);
+
+    @media ($tablet-width) {
+      fill: rgba($pink-color, 1);
+    }
   }
 
   &:hover,
@@ -267,10 +271,12 @@
       fill: rgba($grey-color, 0.6);
     }
   }
+}
 
-  &:active {
+.active-filter {
+  &--mobile {
     svg {
-      fill: $pink-color;
+      fill: rgba($pink-color, 1);
     }
   }
 }

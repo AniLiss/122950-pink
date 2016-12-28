@@ -182,19 +182,19 @@
 
   .active-filter {
     &--mobile {
-      fill: $pink-color;
+      fill: rgba($pink-color, 1);
 
       &:hover {
-        fill: $pink-color;
+        fill: rgba($pink-color, 1);
       }
     }
 
     @media ($tablet-width) {
-      fill: $pink-color;
+      fill: rgba($pink-color, 1);
 
       &:hover,
       &:active {
-        fill: $pink-color;
+        fill: rgba($pink-color, 1);
       }
     }
   }
