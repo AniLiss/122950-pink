@@ -20,6 +20,10 @@
   font-weight: 100;
   font-size: 14px;
 
+  @media ($tablet-width) {
+    line-height: 20px;
+  }
+
   span {
     font-family: $opensans-light;
     font-size: 12px;
@@ -35,7 +39,7 @@
 
 .post-card__post {
   padding: 17px;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
   background-color: $light-grey-color;
   display: flex;
   flex-direction: column;
@@ -43,7 +47,7 @@
 
   @media ($tablet-width) {
     min-height: 155px;
-    padding: 25px;
+    padding: 27px;
     position: relative;
   }
 }
@@ -69,7 +73,7 @@
   position: relative;
   padding-left: 32px;
 
-  @media ($desktop-width) {
+  @media ($tablet-width) {
     display: block;
     padding-left: 0;
   }
@@ -84,7 +88,7 @@
     left: 0;
     bottom: 2px;
 
-    @media ($desktop-width) {
+    @media ($tablet-width) {
       left: calc(100% - 15px);
     }
   }
@@ -146,10 +150,11 @@
   position: relative;
   padding-left: 32px;
 
-  @media ($desktop-width) {
+  @media ($tablet-width) {
     display: block;
-    // padding-left: 0;
-    padding-left: 32px;
+    padding-left: 0;
+    //padding-left: 32px;
+    padding-right: 40px;
   }
 
   &::before {
@@ -162,9 +167,9 @@
     left: 0;
     bottom: 2px;
 
-    @media ($desktop-width) {
-      left: 0;
-      bottom: 5px
+    @media ($tablet-width) {
+      left: 105px;
+      bottom: 5px;
     }
   }
 }

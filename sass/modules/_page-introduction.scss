@@ -47,6 +47,7 @@
     @media ($tablet-width) {
       padding-bottom: 50px;
     }
+
     @media ($desktop-width) {
       padding: 92px 83px 74px;
     }
@@ -88,7 +89,7 @@
   }
 
   @media ($tablet-width) {
-    padding: 0;
+    padding: 0 20px;
     font-size: 18px;
   }
 
@@ -112,6 +113,16 @@
       @media ($tablet-width) {
         padding: 0 100px;
       }
+    }
+  }
+}
+
+.page-introduction--photo-page {
+
+  .page-introduction__content {
+    @media ($desktop-width) {
+      padding-left: 260px;
+      padding-right: 260px;
     }
   }
 }

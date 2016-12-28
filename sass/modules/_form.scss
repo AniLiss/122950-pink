@@ -262,12 +262,65 @@
 
     //margin-top: 10px;
   }
+
   @media ($tablet-width) {
     padding-bottom: 0;
   }
+
   @media ($desktop-width) {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.form__contacts-item {
+  li {
+    position: relative;
+  }
+}
+
+input {
+  &[name='telephone-number'],
+  &[name='email'] {
+    background-image: url('../img/icon-phone.svg');
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+
+    @media ($desktop-width) {
+      background-position: 95%;
+    }
+  }
+
+  &[name='email'] {
+    background-image: url('../img/icon-mail.svg');
+  }
+}
+
+.bg-place {
+  width: 64px;
+  height: 64px;
+  background-color: $light-grey-color;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  transform: translateY(-100%);
+  z-index: 0;
+
+  @media ($tablet-width) {
+    top: 0;
+    transform: none;
+  }
+
+  &--email {
+    @media ($tablet-width) {
+      top: 28px;
+    }
+    @media ($desktop-width) {
+      top: 0;
+    }
   }
 }
 
@@ -403,6 +456,7 @@
 
     @media ($desktop-width) {
       display: inline-block;
+      vertical-align: middle;
     }
   }
 }

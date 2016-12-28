@@ -49,6 +49,7 @@
   &:hover,
   &:focus {
     color: $grey-color;
+
     svg {
       fill: $grey-color;
     }
@@ -56,6 +57,7 @@
 
   &:active {
     color: rgba($grey-color, 0.3);
+
     svg {
       fill: rgba($grey-color, 0.3);
     }
@@ -180,6 +182,10 @@
 
 .email {
   @include color-change-p-b-g();
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .html-academy-icon {

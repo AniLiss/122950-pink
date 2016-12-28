@@ -1,5 +1,6 @@
 .feedback-slider {
   @include container();
+
   margin-top: 45px;
   position: relative;
 
@@ -43,7 +44,7 @@
 
   @media ($desktop-width) {
     padding: 0 40px 45px;
-    margin-top: 65px;
+    margin-top: 87px;
 
     &:before {
       content: '';

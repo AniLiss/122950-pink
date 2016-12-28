@@ -35,7 +35,7 @@
 .photo-posting__settings {
   background-color: $light-grey-color;
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 
   @media ($tablet-width) {
     padding: 60px 0;
@@ -46,11 +46,11 @@
   line-height: 30px;
   font-size: 14px;
   font-weight: 100;
-  padding: 50px 0 40px;
+  padding: 40px 0 50px;
 
   @media ($tablet-width) {
     font-size: 18px;
-    padding: 65px 0;
+    padding: 68px 0;
   }
 
   @media ($desktop-width) {
@@ -92,13 +92,16 @@
 
   input {
     display: none;
+
     @media ($tablet-width) {
       display: block;
     }
   }
+
   li {
     padding: 0 15px;
   }
+
   @media ($tablet-width) {
     flex-direction: column;
     padding: 0 0 0 35px;
@@ -110,10 +113,14 @@
       border-bottom: 2px solid #dddfe0;
       &:first-of-type {
         padding: 0 0 15px;
+      }
 
+      @media ($tablet-width) {
+        padding: 28px 0 10px;
       }
     }
   }
+
   @media ($desktop-width) {
     padding: 0;
   }
@@ -128,26 +135,68 @@
   @media ($tablet-width) {
     width: 30px;
     height: 30px;
+
     svg {
       width: 30px;
       height: 30px;
+      //fill: $pink-color;
     }
   }
-  @media ($desktop-width) {
-    width: 40px;
-    height: 40px;
-    svg {
+
+  svg {
+    @media ($desktop-width) {
       width: 40px;
       height: 40px;
     }
   }
-  &--crop {
+
+  &--brightness svg {
+
+    @media ($tablet-width) {
+      width: 20px;
+      height: 20px;
+    }
+
+    @media ($desktop-width) {
+      width: 30px;
+      height: 30px;
+
+      //svg {
+      //  width: 40px;
+      //  height: 40px;
+      //}
+    }
+
+    &--crop {
+    }
+
+    &--color {
+    }
+
+    //&--brightness svg {
+    //  @media ($tablet-width) {
+    //  width: 18px;
+    //    height: 18px;
+    //}
   }
 
-  &--color {
-  }
+  .active-filter {
+    &--mobile {
+      fill: $pink-color;
 
-  &--brightness {
+      &:hover {
+        fill: $pink-color;
+      }
+    }
+
+    @media ($tablet-width) {
+      fill: $pink-color;
+
+      &:hover,
+      &:active {
+        fill: $pink-color;
+      }
+    }
   }
 }
 
@@ -253,6 +302,7 @@
       background-color: $pink-color;
     }
   }
+
   @media ($tablet-width) {
     width: 100%;
     margin: 0 5px;
@@ -267,6 +317,7 @@
     padding: 0 10px;
     width: 100%;
   }
+
   @media ($desktop-width) {
     padding: 0 50px;
   }
@@ -287,13 +338,17 @@
 }
 
 .photo-posting__buttons {
+
+  padding-top: 36px;
+
   button {
     min-width: auto;
   }
-  padding-top: 30px;
+
   @media ($tablet-width) {
     padding: 0 5px 0 40px;
   }
+
   @media ($desktop-width) {
     justify-content: space-between;
     padding: 0;

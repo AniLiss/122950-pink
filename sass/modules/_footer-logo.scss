@@ -2,7 +2,9 @@
   display: none;
   @include container();
 
-  padding: 55px 40px;
+  //padding: 55px 40px;
+
+  padding: 40px 40px;
 
   a {
     font: 0/0 serif;
@@ -16,12 +18,17 @@
 
     .social-icons {
       padding: 40px 0;
+
+      @media ($desktop-width) {
+        padding: 0;
+      }
     }
   }
 
   &--picture-page {
     @media ($desktop-width) {
       padding: 110px 0;
+      align-items: baseline;
     }
   }
 
@@ -37,7 +44,7 @@
     max-width: 940px;
     margin: 0 auto;
     //padding: 95px 0;
-    padding: 110px 70px;
+    padding: 100px 0 60px;
 
     &--form-page {
       padding: 35px 0;
